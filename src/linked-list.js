@@ -35,9 +35,18 @@ class LinkedList {
 
     insertAt(index, data) {}
 
-    isEmpty() {}
+    isEmpty() {
+      return this.length == 0;
+    }
 
-    clear() {}
+    clear() {
+      var node = new Node();
+      this.length = 0;
+      this._head = node;
+      this._tail = node;
+
+      return this;
+    }
 
     deleteAt(index) {}
 
